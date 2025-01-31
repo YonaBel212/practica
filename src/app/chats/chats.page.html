@@ -1,0 +1,11 @@
+<ion-content [fullscreen]="true">
+  <ion-list lines="none">
+    <app-item-chat
+      *ngFor="let chat of chats"
+      [username]="chat.username"
+      [message]="chat.message"
+      [date]="chat.date"
+      [avatarUrl]="chat.avatarUrl"  
+    ></app-item-chat>
+  </ion-list>
+</ion-content>
